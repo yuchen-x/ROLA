@@ -166,7 +166,7 @@ def main(
     envs_runner = EnvsRunner(
         env, n_envs, controller, memory, max_epi_steps, gamma, seed, obs_last_action
     )
-    # create a learner
+    # create a learner with ROLA algorithm
     learner = Learner(env, env_name, controller, memory, **hyper_params, **critic_params)
     # create epsilon calculator for implementing e-greedy exploration policy
     eps_call = LinearDecay(eps_decay_epis, eps_start, eps_end)
