@@ -66,6 +66,8 @@ rola.py with env_name='pomdp_simple_spread' n_agent=3 n_envs=2 max_epi_steps=25 
 rola.py with env_name='pomdp_advanced_spread' config_name='antipodal' n_agent=4 n_envs=2 max_epi_steps=50 discrete_mul=1 obs_r=1.4 a_lr=0.001 c_lr=0.001 local_c_train_iteration=4 train_freq=2 c_target_update_freq=16 n_step_bootstrap=5 eps_decay_epis=20000 eps_end=0.05 total_epies=30000 eval_num_epi=10 eval_freq=100 eval_policy save_ckpt save_dir='ROLA_AN_6' run_idx=0
 ```
 
+NOTE: both training and testing results are saved in the specified directory under the `./performance/` folder.
+
 # Code Structure
 - `./scripts/rola.py` the main training loop of ROLA
 - `./src/pg_marl/rola/` all source code of ROLA
